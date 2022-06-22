@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "server";
+
+package users;
+
+service Users {
+  rpc GetFiles (UserRequest) returns (stream UserResponse);
+}
+
+message UserRequest {
+  int32 fileId = 1;
+}
+
+message UserResponse {
+  bytes file = 1;
+}

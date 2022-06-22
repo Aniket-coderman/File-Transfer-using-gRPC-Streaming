@@ -1,0 +1,2 @@
+obj\Debug\net6.0\Protos/Users.cs \
+obj\Debug\net6.0\Protos/UsersGrpc.cs: Protos/users.proto
